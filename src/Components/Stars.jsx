@@ -1,14 +1,25 @@
-import React from 'react'
+import React from "react";
+import { useState } from "react";
+const Star = ()=>{
+     const [Color, SetColor] = useState(true);
 
-export default function star() {
-  return (
-    <h4 style={{margin:0}}>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
-            <i className="fa-solid fa-star"></i>
+  return(
+      <i className="fa-solid fa-star" onClick={()=>  SetColor(v=>!v)} style={{color: Color ? "silver" : "gold" }}></i>
 
-    </h4>
   )
+}
+export default function Stars() {
+
+  return (
+    <>
+    <h3 style={{ margin: 0,fontSize: "15px" }}>
+    
+        <Star/>
+        <Star/>
+        <Star/>
+        <Star/>
+        <Star/>
+    </h3>
+    </>
+  );
 }

@@ -38,9 +38,12 @@
 }
 .content {
     row-gap:10px ;
-
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center; */
+  /* justify-content: center; */
+  padding-inline: 2px;
   flex-direction: column;
+}
+.img{
+  transform: translateX(-2.5px);
 }
